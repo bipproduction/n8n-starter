@@ -80,7 +80,8 @@ async function build() {
 
   console.log("🎉 Build complete!");
 }
-
-execSync("cd src && npm version patch", { stdio: 'inherit' })
+const version = execSync('npm view lodash version').toString().trim();
+console.log("🚀 Version:", version);
+execSync("cd src && npm version ", { stdio: 'inherit' })
 build()
 

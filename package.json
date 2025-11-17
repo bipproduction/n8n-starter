@@ -5,9 +5,11 @@
   "version": "1.0.1",
   "scripts": {
     "init": "bun bin/init.ts",
-    "generate": "bun bin/generate.ts",
     "build": "bun bin/build.ts",
-    "publish": "bun bin/publish.ts"
+    "generate": "bun bin/generate.ts",
+    "generate:build": "bun bin/generate.ts && bun bin/build.ts",
+    "version:update": "bun bin/version_update.ts",
+    "publish": "git add -A && git commit -m 'update version' && bun run version:update && bun run build && bun bin/publish.ts"
   },
   "dependencies": {},
   "devDependencies": {

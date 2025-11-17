@@ -34,7 +34,7 @@ async function loadOpenAPI(): Promise<OpenAPI> {
 
 // convert operation to value
 function operationValue(tag: string, operationId: string) {
-    return `${safe(tag)}_${safe(operationId)}`;
+    return _.snakeCase(`${safe(tag)}_${safe(operationId)}`);
 }
 
 // build properties for dropdown + dynamic inputs
@@ -55,7 +55,7 @@ function buildPropertiesBlock(ops: Array<any>) {
       options: [
         ${options.join(',\n        ')}
       ],
-      default: '${operationValue(ops[0].tag, ops[0].operationId)}',
+      default: '${operationValue(ops[0].tag, ops[0].operationId).replace(/_/g, ' ')}',
       description: 'Pilih endpoint yang akan dipanggil'
     }
   `;
@@ -327,6 +327,10 @@ function packageText({ name, className }: { name: string, className: string }) {
 }
 
 async function run() {
+
+    await fs.rm('src', { recursive: true }).catch(() => { })
+    await fs.mkdir('src/credentials', { recursive: true })
+    await fs.mkdir('src/nodes', { recursive: true })
 
     console.log('💡 Loading OpenAPI...');
     const api = await loadOpenAPI();
