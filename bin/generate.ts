@@ -34,7 +34,7 @@ async function loadOpenAPI(): Promise<OpenAPI> {
 
 // convert operation to value
 function operationValue(tag: string, operationId: string) {
-    return _.snakeCase(`${safe(tag)}_${safe(operationId)}`);
+    return _.snakeCase(`${tag}_${operationId}`);
 }
 
 // build properties for dropdown + dynamic inputs
@@ -75,7 +75,7 @@ function buildPropertiesBlock(ops: Array<any>) {
         default: '',
         placeholder: '${name}',
         description: '${name}',
-        displayOptions: { show: { operation: ['${value}'] } }
+        displayOptions: { show: { operation: ['${value}'] , "@tool": [true]} }
       }`);
         }
 
@@ -100,7 +100,7 @@ function buildPropertiesBlock(ops: Array<any>) {
         default: ${defVal},
         placeholder: '${name}',
         description: '${schema?.description ?? name}',
-        displayOptions: { show: { operation: ['${value}'] } }
+        displayOptions: { show: { operation: ['${value}'], "@tool": [true] } }
       }`);
         }
     }

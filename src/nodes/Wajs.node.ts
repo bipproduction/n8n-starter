@@ -248,7 +248,10 @@ export class Wajs implements INodeType {
         placeholder: "name",
         description: "name",
         displayOptions: {
-          show: { operation: ["apikey_post_api_apikey_create"] },
+          show: {
+            operation: ["apikey_post_api_apikey_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -260,7 +263,10 @@ export class Wajs implements INodeType {
         placeholder: "description",
         description: "description",
         displayOptions: {
-          show: { operation: ["apikey_post_api_apikey_create"] },
+          show: {
+            operation: ["apikey_post_api_apikey_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -272,7 +278,10 @@ export class Wajs implements INodeType {
         placeholder: "id",
         description: "id",
         displayOptions: {
-          show: { operation: ["apikey_delete_api_apikey_delete"] },
+          show: {
+            operation: ["apikey_delete_api_apikey_delete"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -284,7 +293,10 @@ export class Wajs implements INodeType {
         placeholder: "number",
         description: "number",
         displayOptions: {
-          show: { operation: ["whats_app_post_api_wa_send_text"] },
+          show: {
+            operation: ["whats_app_post_api_wa_send_text"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -296,7 +308,10 @@ export class Wajs implements INodeType {
         placeholder: "text",
         description: "text",
         displayOptions: {
-          show: { operation: ["whats_app_post_api_wa_send_text"] },
+          show: {
+            operation: ["whats_app_post_api_wa_send_text"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -308,7 +323,10 @@ export class Wajs implements INodeType {
         placeholder: "number",
         description: "number",
         displayOptions: {
-          show: { operation: ["whats_app_post_api_wa_send_media"] },
+          show: {
+            operation: ["whats_app_post_api_wa_send_media"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -320,7 +338,10 @@ export class Wajs implements INodeType {
         placeholder: "media",
         description: "media",
         displayOptions: {
-          show: { operation: ["whats_app_post_api_wa_send_media"] },
+          show: {
+            operation: ["whats_app_post_api_wa_send_media"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -332,7 +353,10 @@ export class Wajs implements INodeType {
         placeholder: "name",
         description: "name",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -344,7 +368,10 @@ export class Wajs implements INodeType {
         placeholder: "description",
         description: "description",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -356,7 +383,10 @@ export class Wajs implements INodeType {
         placeholder: "url",
         description: "url",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -368,7 +398,10 @@ export class Wajs implements INodeType {
         placeholder: "method",
         description: "method",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -380,7 +413,10 @@ export class Wajs implements INodeType {
         placeholder: "headers",
         description: "headers",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -392,7 +428,10 @@ export class Wajs implements INodeType {
         placeholder: "payload",
         description: "payload",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -404,7 +443,10 @@ export class Wajs implements INodeType {
         placeholder: "apiToken",
         description: "apiToken",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -416,7 +458,10 @@ export class Wajs implements INodeType {
         placeholder: "enabled",
         description: "enabled",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -428,7 +473,10 @@ export class Wajs implements INodeType {
         placeholder: "replay",
         description: "replay",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -440,7 +488,10 @@ export class Wajs implements INodeType {
         placeholder: "replayKey",
         description: "replayKey",
         displayOptions: {
-          show: { operation: ["webhook_post_api_webhook_create"] },
+          show: {
+            operation: ["webhook_post_api_webhook_create"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -452,7 +503,10 @@ export class Wajs implements INodeType {
         placeholder: "name",
         description: "name",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -464,7 +518,10 @@ export class Wajs implements INodeType {
         placeholder: "description",
         description: "description",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -476,7 +533,10 @@ export class Wajs implements INodeType {
         placeholder: "url",
         description: "url",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -488,7 +548,10 @@ export class Wajs implements INodeType {
         placeholder: "method",
         description: "method",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -500,7 +563,10 @@ export class Wajs implements INodeType {
         placeholder: "headers",
         description: "headers",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -512,7 +578,10 @@ export class Wajs implements INodeType {
         placeholder: "payload",
         description: "payload",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -524,7 +593,10 @@ export class Wajs implements INodeType {
         placeholder: "apiToken",
         description: "apiToken",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -536,7 +608,10 @@ export class Wajs implements INodeType {
         placeholder: "enabled",
         description: "enabled",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -548,7 +623,10 @@ export class Wajs implements INodeType {
         placeholder: "replay",
         description: "replay",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -560,7 +638,10 @@ export class Wajs implements INodeType {
         placeholder: "replayKey",
         description: "replayKey",
         displayOptions: {
-          show: { operation: ["webhook_put_api_webhook_update_by_id"] },
+          show: {
+            operation: ["webhook_put_api_webhook_update_by_id"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -572,7 +653,10 @@ export class Wajs implements INodeType {
         placeholder: "id",
         description: "id",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_default"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_default"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -584,7 +668,10 @@ export class Wajs implements INodeType {
         placeholder: "flowId",
         description: "flowId",
         displayOptions: {
-          show: { operation: ["chatflows_post_api_chatflows_query"] },
+          show: {
+            operation: ["chatflows_post_api_chatflows_query"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -596,7 +683,10 @@ export class Wajs implements INodeType {
         placeholder: "question",
         description: "question",
         displayOptions: {
-          show: { operation: ["chatflows_post_api_chatflows_query"] },
+          show: {
+            operation: ["chatflows_post_api_chatflows_query"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -608,7 +698,10 @@ export class Wajs implements INodeType {
         placeholder: "active",
         description: "active",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_flow_active"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_flow_active"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -620,7 +713,10 @@ export class Wajs implements INodeType {
         placeholder: "flowUrl",
         description: "flowUrl",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_url_token"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_url_token"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -632,7 +728,10 @@ export class Wajs implements INodeType {
         placeholder: "flowToken",
         description: "flowToken",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_url_token"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_url_token"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -644,7 +743,10 @@ export class Wajs implements INodeType {
         placeholder: "waPhoneNumberId",
         description: "waPhoneNumberId",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_url_token"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_url_token"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -656,7 +758,10 @@ export class Wajs implements INodeType {
         placeholder: "waToken",
         description: "waToken",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_url_token"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_url_token"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -668,7 +773,10 @@ export class Wajs implements INodeType {
         placeholder: "active",
         description: "active",
         displayOptions: {
-          show: { operation: ["chatflows_put_api_chatflows_url_token"] },
+          show: {
+            operation: ["chatflows_put_api_chatflows_url_token"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -679,7 +787,9 @@ export class Wajs implements INodeType {
         default: "",
         placeholder: "email",
         description: "email",
-        displayOptions: { show: { operation: ["auth_post_auth_login"] } },
+        displayOptions: {
+          show: { operation: ["auth_post_auth_login"], "@tool": [true] },
+        },
       },
 
       {
@@ -689,7 +799,9 @@ export class Wajs implements INodeType {
         default: "",
         placeholder: "password",
         description: "password",
-        displayOptions: { show: { operation: ["auth_post_auth_login"] } },
+        displayOptions: {
+          show: { operation: ["auth_post_auth_login"], "@tool": [true] },
+        },
       },
 
       {
@@ -700,7 +812,10 @@ export class Wajs implements INodeType {
         placeholder: "hub.mode",
         description: "hub.mode",
         displayOptions: {
-          show: { operation: ["whats_app_hook_get_wa_hook_hook"] },
+          show: {
+            operation: ["whats_app_hook_get_wa_hook_hook"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -712,7 +827,10 @@ export class Wajs implements INodeType {
         placeholder: "hub.verify_token",
         description: "hub.verify_token",
         displayOptions: {
-          show: { operation: ["whats_app_hook_get_wa_hook_hook"] },
+          show: {
+            operation: ["whats_app_hook_get_wa_hook_hook"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -724,7 +842,10 @@ export class Wajs implements INodeType {
         placeholder: "hub.challenge",
         description: "hub.challenge",
         displayOptions: {
-          show: { operation: ["whats_app_hook_get_wa_hook_hook"] },
+          show: {
+            operation: ["whats_app_hook_get_wa_hook_hook"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -736,7 +857,10 @@ export class Wajs implements INodeType {
         placeholder: "page",
         description: "page",
         displayOptions: {
-          show: { operation: ["whats_app_hook_get_wa_hook_list"] },
+          show: {
+            operation: ["whats_app_hook_get_wa_hook_list"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -748,7 +872,10 @@ export class Wajs implements INodeType {
         placeholder: "limit",
         description: "limit",
         displayOptions: {
-          show: { operation: ["whats_app_hook_get_wa_hook_list"] },
+          show: {
+            operation: ["whats_app_hook_get_wa_hook_list"],
+            "@tool": [true],
+          },
         },
       },
 
@@ -759,7 +886,9 @@ export class Wajs implements INodeType {
         default: "",
         placeholder: "lines",
         description: "lines",
-        displayOptions: { show: { operation: ["logs_get_logs_show"] } },
+        displayOptions: {
+          show: { operation: ["logs_get_logs_show"], "@tool": [true] },
+        },
       },
 
       {
@@ -769,7 +898,9 @@ export class Wajs implements INodeType {
         default: "",
         placeholder: "level",
         description: "level",
-        displayOptions: { show: { operation: ["logs_get_logs_show"] } },
+        displayOptions: {
+          show: { operation: ["logs_get_logs_show"], "@tool": [true] },
+        },
       },
     ],
   };
