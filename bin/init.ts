@@ -24,6 +24,9 @@ async function init() {
 
     try {
         await fs.access(".git")
+
+        console.log("[INIT] Git already initialized")
+        execSync("rm -rf .git")
     } catch (error) {
         execSync("git init")
     }
