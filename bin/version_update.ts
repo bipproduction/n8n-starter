@@ -1,4 +1,5 @@
 import { execSync } from "node:child_process";
+import fs from "node:fs";
 const NAMESPACE = process.env.NAMESPACE
 
 if (!NAMESPACE) {
@@ -18,9 +19,9 @@ const [major, minor, patch] = remoteVersion.split(".").map(Number);
 // 3. Generate versi baru: remote + 1 patch
 const newLocalVersion = `${major}.${minor}.${patch + 1}`;
 
-console.log("⬆️  New local version:", newLocalVersion);
+const pkgPath = "src/package.json";
+const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf8"));
 
-// 4. Update package.json di folder src
-execSync(`cd src && npm version ${newLocalVersion} --allow-all --force`, {
-  stdio: "inherit",
-});
+pkg.version = newLocalVersion;
+
+fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
