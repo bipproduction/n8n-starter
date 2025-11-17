@@ -22,11 +22,14 @@ async function init() {
         throw new Error('NAMESPACE and OPENAPI_URL are required')
     }
 
+    await fs.rmdir("src", { recursive: true }).catch(() => { })
+
     try {
         await fs.access(".git")
 
         console.log("[INIT] Git already initialized")
         execSync("rm -rf .git")
+        execSync("git init")
     } catch (error) {
         execSync("git init")
     }
@@ -52,7 +55,6 @@ async function init() {
     console.log('[INIT] Installing dependencies...');
     execSync("bun install", { stdio: 'inherit' })
 
-    console.log('[INIT] Done');
 
 }
 
